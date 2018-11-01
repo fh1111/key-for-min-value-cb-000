@@ -8,7 +8,7 @@ def key_for_min_value(name_hash)
 
     itemtemp =  item
     numbertemp = number
-    if (!(numbertemp == number)
+    if (!(numbertemp == number))
       if (number > numbertemp)
         numbertemp = number
         itemtemp = item
