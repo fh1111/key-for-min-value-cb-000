@@ -24,8 +24,11 @@ def key_for_min_value(name_hash)
 
   end
 
-  return itemtemp
-
+  if (itemtemp == [])
+    return nil
+  else
+    return itemtemp
+  end
 
 
 end
