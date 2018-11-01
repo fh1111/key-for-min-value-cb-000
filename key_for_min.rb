@@ -16,7 +16,7 @@ def key_for_min_value(name_hash)
     end
 
     if (count > 0)
-      if (number > numbertemp)
+      if (number < numbertemp)
         numbertemp = number
         itemtemp = item
       end
