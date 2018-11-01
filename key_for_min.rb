@@ -24,7 +24,7 @@ def key_for_min_value(name_hash)
 
   end
 
-  puts itemtemp
+  return itemtemp
 
 
 
