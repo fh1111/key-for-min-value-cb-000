@@ -4,7 +4,7 @@
 def key_for_min_value(name_hash)
 
   itemtemp = []
-  
+  numbertemp = 0
 
   name_hash.collect do |item , number|
 
