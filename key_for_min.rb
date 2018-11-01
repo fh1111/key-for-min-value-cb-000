@@ -5,12 +5,17 @@ def key_for_min_value(name_hash)
 
   itemtemp = []
   numbertemp = 0
+  count = 0
 
   name_hash.collect do |item , number|
 
-    itemtemp =  item
-    numbertemp = number
-    if (!(numbertemp == number))
+    if (count == 0)
+      itemtemp =  item
+      numbertemp = number
+      count += 1
+    end
+
+    if (count > 0)
       if (number > numbertemp)
         numbertemp = number
         itemtemp = item
