@@ -3,18 +3,23 @@
 
 def key_for_min_value(name_hash)
 
-  min = 0 
+
   name_hash.collect do |item , number|
 
-    if (number < min)
-      min = number
+    itemtemp =  item
+    numbertemp = number
+    if (!(numbertemp == number)
+      if (number > numbertemp)
+        numbertemp = number
+        itemtemp = item
+      end
     end
 
   end
 
-  puts min  
-    
-    
+  puts numbertemp
+
+
 
 end
 
